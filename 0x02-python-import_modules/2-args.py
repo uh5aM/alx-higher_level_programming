@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
         if i >=0:
             i=0
-            for arg insys.argv:
+            for arg in sys.argv:
                 if i !=0:
                     print("{}: {}".format(i, arg))
                 i += 1

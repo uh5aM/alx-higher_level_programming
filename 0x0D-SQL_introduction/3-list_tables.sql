@@ -1,2 +1,2 @@
---showing tables inside mysql databses
+-- showing tables inside mysql databses
 SHOW TABLES;

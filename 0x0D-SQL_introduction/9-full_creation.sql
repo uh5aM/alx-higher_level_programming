@@ -1,7 +1,6 @@
 -- scrip that create tables second_tabl
 -- add rows 
-CREATE TABLE second_table(
-id INT,
+CREATE TABLE second_table(id INT,
 name VARCHAR(256),
 score INT);
 

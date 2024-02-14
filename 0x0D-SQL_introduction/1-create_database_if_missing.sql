@@ -1,2 +1,3 @@
 -- create database if miss
-CREATE DATABASES IF NOT EXISTS hbtn_0c_0;
+-- if not ezit
+CREATE DATABASE IF NOT EXISTS hbtn_0c_0;

@@ -1,2 +1,2 @@
---display all the databses
+-- display all the databses
 SHOW DATABASES;

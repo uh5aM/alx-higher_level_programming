@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""lists all City objects from the database hbtn_0e_101_usa"""
+"""lists all State objects, and corresponding City objects,
+contained in the database hbtn_0e_101_usa"""
 
 if __name__ == "__main__":
 
@@ -16,6 +17,8 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
 
     session = Session(engine)
-    for city in session.query(City).order_by(City.id).all():
-        print("{}: {} -> {}".format(city.id, city.name, city.state.name))
+    for state in session.query(State).order_by(State.id).all():
+        print("{}: {}".format(state.id, state.name))
+        for city in state.cities:
+            print("    {}: {}".format(city.id, city.name))
     session.close()
